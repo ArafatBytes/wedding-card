@@ -68,7 +68,7 @@ import anime from 'animejs';
               </div>
             </div>
           </div>
-          <div className="p-6 sm:p-8 md:p-10 lg:p-12 bg-gradient-to-t from-fuchsia-50 to-fuchsia-50 inner-border card-shine-effect">
+          <div className="p-6 sm:p-8 md:p-10 lg:p-12 inner-border card-shine-effect">
             <h2 className="text-2xl text-center text-fuchsia-600 sm:text-3xl md:text-4xl lg:text-5xl font-semibold animated-message">Our Message</h2>
             <p className="mt-4 text-base bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-500 to-orange-500 sm:text-xl md:text-xl lg:text-2xl text-justify animated-message font-cursive">As we step into this new chapter of our lives together, we find ourselves surrounded by the love and warmth of those who mean the most to us. Your presence in our journey has always been a blessing, and we would be honored to have you join us as we celebrate our union.</p>
             <p className="bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-fuchsia-500 mt-4 text-base sm:text-xl md:text-xl lg:text-2xl text-justify animated-message font-cursive">Please join us for our wedding reception as we celebrate our love, laughter, and the beginning of our forever.</p>

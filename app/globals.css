@@ -120,7 +120,7 @@ body {
 .inner-border {
   position: relative;
   padding: 0.5rem; /* Adjust based on your needs */
-  background: rgb(252, 234, 255);
+  background: rgb(252, 233, 255);
 }
 
 .inner-border::before {
@@ -130,7 +130,7 @@ body {
   left: 0.4rem;
   right: 0.4rem;
   bottom: 0.5rem;
-  border: 0.3rem solid rgb(234 179 8); /* Red border of 1rem thickness */
+  border: 0.3rem solid rgb(254 240 138); /* Red border of 1rem thickness */
   pointer-events: none; /* Ensure this does not interfere with clicking */
   box-sizing: border-box; /* Make sure the border doesn't affect the inner content */
   z-index: 0; /* Place it behind the inner content */
