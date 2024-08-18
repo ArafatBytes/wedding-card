@@ -132,10 +132,10 @@ import anime from 'animejs';
             </div>
             </div>
             <div className="bg-muted py-6 px-6 sm:py-8 sm:px-8 md:py-10 md:px-10 lg:py-12 lg:px-12 flex justify-center gap-5">
-            <Link href="#" className="text-muted-foreground text-yellow-300 hover:text-primary" prefetch={false}>
+            <Link href="#" className="text-muted-foreground text-white hover:text-primary" prefetch={false}>
               <FacebookIcon className="w-8 h-8" />
             </Link>
-            <Link href="#" className="text-muted-foreground text-yellow-300 hover:text-primary" prefetch={false}>
+            <Link href="#" className="text-muted-foreground text-white hover:text-primary" prefetch={false}>
               <InstagramIcon className="w-8 h-8" />
             </Link>
           </div>
