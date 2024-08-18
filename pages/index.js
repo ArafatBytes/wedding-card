@@ -1,17 +1,29 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/3yXqqRy6uGK
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { useEffect } from 'react';
 
-export default function Component() {
+
+function startCelebration() {
+    const confetti = require('canvas-confetti');
+    const myConfetti = confetti.create(null, {
+      resize: true,
+      useWorker: true,
+      duration: 500,
+    });
+    myConfetti();
+  }
+  
+  export default function HomePage() {
+    useEffect(() => {
+      // This code runs only in the browser after the component has mounted
+      startCelebration();
+    }, []);
+
   return (
-    <div className="min-h-screen bg-[url('/background.jpeg')] bg-cover bg-center">
-      <div className="absolute inset-0 bg-gradient-to-b from-purple/200 to-red/300 z-10" />
+    <div className="min-h-screen bg-[url('/background.png')] bg-cover bg-center">
+      <div className="absolute inset-0 bg-gradient-to-b from-fuchsia-950 to-fuchsia/200 z-10" />
       <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 py-12 sm:px-8 md:px-12 lg:px-16">
-        <div className="w-full max-w-md bg-red rounded-2xl shadow-lg overflow-hidden">
+        <div className="w-full max-w-md rounded-3xl shadow-lg overflow-hidden">
           <div className="relative h-[500px] sm:h-[600px] md:h-[700px] lg:h-[800px]">
             <img
               src="/couple-photo.jpeg"
@@ -21,13 +33,13 @@ export default function Component() {
               className="object-cover w-full h-full"
               style={{ aspectRatio: "800/800", objectFit: "cover" }}
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50" />
-            <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 md:p-10 lg:p-12">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white">Tasfia & Shahbaz</h1>
-              <p className="mt-2 text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-white">November xx, 2024</p>
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-600" />
+            <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 md:p-10 lg:p-12 bg-gradient-to-b from-transparent to-black/50">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-fuchsia-200">tiasha & Shahbaz</h1>
+              <p className="mt-2 text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium text-fuchsia-200">November xx, 2024</p>
               <div className="mt-6 flex gap-4">
               <Button
-                className="flex items-center justify-center flex-1 bg-purple-500 text-white py-2 px-4 rounded-full hover:bg-red-500 transition-colors"
+                className="flex items-center justify-center flex-1 bg-fuchsia-700 text-white py-2 px-4 rounded-full hover:bg-fuchsia-400 transition-colors"
                 onClick={() => (window.location.href = "tel:+8801756839808")}
                 >
               <PhoneIcon className="w-5 h-5 mr-2" />
@@ -35,7 +47,7 @@ export default function Component() {
               </Button>
                 <Button
                   variant="secondary"
-                  className="flex items-center justify-center flex-1 bg-purple-500 text-white py-2 px-4 rounded-full hover:bg-red-500 transition-colors"
+                  className="flex items-center justify-center flex-1 bg-fuchsia-700 text-white py-2 px-4 rounded-full hover:bg-fuchsia-400 transition-colors"
                   onClick={() => (window.location.href = "mailto:example@email.com")}
                 >
                   <MailOpenIcon className="w-5 h-5 mr-2" />
@@ -44,13 +56,13 @@ export default function Component() {
               </div>
             </div>
           </div>
-          <div className="p-6 sm:p-8 md:p-10 lg:p-12 bg-gradient-to-b from-white/50 to-black/50 rounded-sm">
-            <h2 className="text-2xl text-black sm:text-3xl md:text-4xl lg:text-5xl font-bold">Event Location</h2>
-            <p className="mt-4 text-base text-black sm:text-lg md:text-xl lg:text-2xl">123 Main Street, Anytown USA</p>
+          <div className="p-6 sm:p-8 md:p-10 lg:p-12 bg-white bg-gradient-to-t from-transparent to-fuchsia-950">
+            <h2 className="text-2xl text-fuchsia-200 sm:text-3xl md:text-4xl lg:text-5xl font-semibold">Event Location</h2>
+            <p className="mt-4 text-base text-fuchsia-100 sm:text-md md:text-xl lg:text-2xl">123 Main Street, Anytown USA</p>
             <div className="mt-8">
-              <h2 className="text-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">Videos</h2>
+              <h2 className="text-fuchsia-100 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">Videos</h2>
               <div className="mt-4 grid grid-cols-2 gap-4">
-                <div className="video-container aspect-video rounded-lg overflow-hidden">
+                <div className="video-container aspect-video rounded-xl overflow-hidden">
                 <iframe
                     src="https://www.youtube.com/embed/dQw4w9WgXcQ?enablejsapi=1"
                     frameBorder="0"
@@ -60,7 +72,7 @@ export default function Component() {
                     className="w-full h-full"
                 ></iframe>
                 </div>
-                <div className="video-container aspect-video rounded-lg overflow-hidden">
+                <div className="video-container aspect-video rounded-xl overflow-hidden">
                 <iframe
                     src="https://www.youtube.com/embed/dQw4w9WgXcQ?enablejsapi=1"
                     frameBorder="0"
@@ -70,7 +82,7 @@ export default function Component() {
                     className="w-full h-full"
                 ></iframe>
                 </div>
-                <div className="video-container aspect-video rounded-lg overflow-hidden">
+                <div className="video-container aspect-video rounded-xl overflow-hidden">
                 <iframe
                     src="https://www.youtube.com/embed/dQw4w9WgXcQ?enablejsapi=1"
                     frameBorder="0"
@@ -80,7 +92,7 @@ export default function Component() {
                     className="w-full h-full"
                 ></iframe>
                 </div>
-                <div className="video-container aspect-video rounded-lg overflow-hidden">
+                <div className="video-container aspect-video rounded-xl overflow-hidden">
                 <iframe
                     src="https://www.youtube.com/embed/dQw4w9WgXcQ?enablejsapi=1"
                     frameBorder="0"
@@ -93,20 +105,24 @@ export default function Component() {
             </div>
             </div>
           </div>
-          <div className="bg-muted py-6 px-6 sm:py-8 sm:px-8 md:py-10 md:px-10 lg:py-12 lg:px-12 flex justify-center gap-4">
-            <Link href="#" className="text-muted-foreground hover:text-primary" prefetch={false}>
-              <FacebookIcon className="w-6 h-6" />
+          <div className="bg-muted py-6 px-6 sm:py-8 sm:px-8 md:py-10 md:px-10 lg:py-12 lg:px-12 flex justify-center gap-4 bg-white">
+            <Link href="#" className="text-muted-foreground text-fuchsia-600 hover:text-primary" prefetch={false}>
+              <FacebookIcon className="w-8 h-8" />
             </Link>
-            <Link href="#" className="text-muted-foreground hover:text-primary" prefetch={false}>
-              <InstagramIcon className="w-6 h-6" />
+            <Link href="#" className="text-muted-foreground text-fuchsia-600 hover:text-primary" prefetch={false}>
+              <InstagramIcon className="w-8 h-8" />
             </Link>
           </div>
         </div>
       </div>
       <div className="fixed bottom-4 right-4 z-30">
-        <Button size="icon" onClick={() => (window.location.href = "https://example.com/qr-code")}>
-          <QrCodeIcon className="w-6 h-6" />
-          <span className="sr-only">Scan QR Code</span>
+        <Button
+            size="icon"
+            className="bg-fuchsia-800 rounded-lg hover:bg-primary-dark text-white hover:text-white"
+            onClick={() => (window.location.href = "https://tiasha-shahbaz-reception-card.vercel.app/")}
+        >
+            <QrCodeIcon className="w-12 h-12" />
+            <span className="sr-only">Scan QR Code</span>
         </Button>
       </div>
     </div>
@@ -169,12 +185,12 @@ function MailOpenIcon(props) {
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z" />
-      <path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10" />
+      <path d="M2 8l10 6 10-6" />
+      <path d="M22 8v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8l10 6z" />
+      <path d="M22 8L12 2 2 8" />
     </svg>
   )
 }
-
 
 function PhoneIcon(props) {
   return (
@@ -190,7 +206,7 @@ function PhoneIcon(props) {
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-2.91A19.51 19.51 0 0 1 3 12.81a19.79 19.79 0 0 1-2.91-8.63A2 2 0 0 1 2.05 2h3a2 2 0 0 1 2 1.72c.12.81.31 1.61.55 2.38a2 2 0 0 1-.45 1.94l-1.27 1.27a16 16 0 0 0 6.55 6.55l1.27-1.27a2 2 0 0 1 1.94-.45c.77.24 1.57.43 2.38.55a2 2 0 0 1 1.72 2z" />
     </svg>
   )
 }
@@ -209,18 +225,11 @@ function QrCodeIcon(props) {
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <rect width="5" height="5" x="3" y="3" rx="1" />
-      <rect width="5" height="5" x="16" y="3" rx="1" />
-      <rect width="5" height="5" x="3" y="16" rx="1" />
-      <path d="M21 16h-3a2 2 0 0 0-2 2v3" />
-      <path d="M21 21v.01" />
-      <path d="M12 7v3a2 2 0 0 1-2 2H7" />
-      <path d="M3 12h.01" />
-      <path d="M12 3h.01" />
-      <path d="M12 16v.01" />
-      <path d="M16 12h1" />
-      <path d="M21 12v.01" />
-      <path d="M12 21v-1" />
+      <rect width="7" height="7" x="2" y="2" rx="1" ry="1" />
+      <rect width="7" height="7" x="15" y="2" rx="1" ry="1" />
+      <rect width="7" height="7" x="15" y="15" rx="1" ry="1" />
+      <path d="M7 7l3 3m0 4l-3 3" />
+      <path d="M14 14l3 3m0-4l-3-3" />
     </svg>
   )
 }
