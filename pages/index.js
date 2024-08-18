@@ -32,7 +32,7 @@ import anime from 'animejs';
     }, []);
 
   return (
-    <div className="min-h-screen min-w-screen bg-cover bg-center bg-gradient-to-b from-fuchsia-700 to-fuchsia-200 z-0">
+    <div className="min-h-screen min-w-screen bg-cover bg-center bg-gradient-to-b from-fuchsia-800 to-fuchsia-200 z-0">
       <div className="absolute inset-0" />
       <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 py-12 sm:px-8 md:px-12 lg:px-16">
         <div className="w-full max-w-md rounded-3xl shadow-lg overflow-hidden">
@@ -45,13 +45,13 @@ import anime from 'animejs';
               className="object-cover w-full h-full"
               style={{ aspectRatio: "800/800", borderRadius: "5%", objectFit: "cover" }}
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-fuchsia-300 rounded-b-2xl"/>
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-fuchsia-400 rounded-b-2xl"/>
             <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 md:p-10 lg:p-12 bg-gradient-to-b from-transparent to-fuchsia-400">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-yellow-200">Tiasha & Shahbaz</h1>
-              <p className="mt-2 text-lg sm:text-xl md:text-2xl lg:text-3xl text-yellow-200">November 16th, 2024</p>
-              <div className="mt-6 flex gap-4">
+              <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-4xl font-semibold">Tiasha & Shahbaz</h1>
+              <p className="mt-2 text-lg sm:text-xl md:text-2xl lg:text-xl">November 16th, 2024</p>
+              <div className="mt-6 mb-2 flex gap-4">
               <Button
-                className="flex items-center justify-center flex-1 bg-fuchsia-600 font-semibold text-yellow-300 py-2 px-4 rounded-2xl button-shine-effect hover:bg-fuchsia-400"
+                className="flex items-center justify-center flex-1 bg-fuchsia-600 font-semibold py-2 px-4 rounded-2xl button-shine-effect hover:bg-fuchsia-400"
                 onClick={() => (window.location.href = "tel:+8801756839808")}
                 >
               <PhoneIcon className="w-5 h-5 mr-2" />
@@ -59,7 +59,7 @@ import anime from 'animejs';
               </Button>
                 <Button
                   variant="secondary"
-                  className="flex items-center justify-center flex-1 bg-fuchsia-600 font-semibold text-yellow-300 py-2 px-4 rounded-2xl button-shine-effect hover:bg-fuchsia-400"
+                  className="flex items-center justify-center flex-1 bg-fuchsia-600 font-semibold py-2 px-4 rounded-2xl button-shine-effect hover:bg-fuchsia-400"
                   onClick={() => (window.location.href = "mailto:example@email.com")}
                 >
                   <MailOpenIcon className="w-5 h-5 mr-2" />
@@ -68,17 +68,18 @@ import anime from 'animejs';
               </div>
             </div>
           </div>
-          <div className="p-6 sm:p-8 md:p-10 lg:p-12 inner-border card-shine-effect">
-            <h2 className="text-2xl text-center text-fuchsia-600 sm:text-3xl md:text-4xl lg:text-5xl font-semibold animated-message">Our Message</h2>
-            <p className="mt-4 text-base bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-500 to-orange-500 sm:text-xl md:text-xl lg:text-2xl text-justify animated-message font-cursive">As we step into this new chapter of our lives together, we find ourselves surrounded by the love and warmth of those who mean the most to us. Your presence in our journey has always been a blessing, and we would be honored to have you join us as we celebrate our union.</p>
-            <p className="bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-fuchsia-500 mt-4 text-base sm:text-xl md:text-xl lg:text-2xl text-justify animated-message font-cursive">Please join us for our wedding reception as we celebrate our love, laughter, and the beginning of our forever.</p>
+          <div className="p-6 sm:p-8 md:p-10 lg:p-12 bg-fuchsia-50 card-shine-effect">
+            <h2 className="text-2xl text-center text-fuchsia-700 sm:text-3xl md:text-4xl lg:text-4xl font-semibold">Our Message</h2>
+            <p className="mt-4 text-base bg-clip-text text-fuchsia-600 sm:text-xl md:text-xl lg:text-xl text-justify animated-message font-semibold">As we step into this new chapter of our lives together, we find ourselves surrounded by the love and warmth of those who mean the most to us. Your presence in our journey has always been a blessing, and we would be honored to have you join us as we celebrate our union.</p>
+            <p className="bg-clip-text text-fuchsia-500 mt-4 text-base sm:text-xl md:text-xl lg:text-xl text-justify animated-message font-semibold">Please join us for our wedding reception as we celebrate our love, laughter, and the beginning of our forever.</p>
           </div>
-          <div className="p-6 sm:p-8 md:p-10 lg:p-12 bg-gradient-to-t from-fuchsia-700 to-fuchsia-50">
-            <h2 className="text-2xl text-fuchsia-800 sm:text-3xl md:text-4xl lg:text-5xl font-semibold">Event Date & Time</h2>
-            <p className="mt-4 mb-4 text-base text-fuchsia-700 sm:text-md md:text-xl lg:text-2xl">Nov 16, 2024 - 08:00 PM</p>
-            <h2 className="text-2xl text-fuchsia-800 sm:text-3xl md:text-4xl lg:text-5xl font-semibold">Event Location</h2>
-            <p className="mt-4 mb-4 text-base text-fuchsia-700 sm:text-md md:text-xl lg:text-2xl">Senakunja, Dhaka Cantonment, Dhaka</p>
-              <div className="map-container rounded-xl overflow-hidden border-4 border-yellow-300">
+          <div className="p-6 sm:p-8 md:p-10 lg:p-12 bg-gradient-to-t from-fuchsia-500 to-fuchsia-50">
+            
+            <h2 className="text-2xl text-fuchsia-700 sm:text-3xl md:text-4xl lg:text-4xl font-semibold">Event Date & Time</h2>
+            <p className="mt-4 mb-4 text-base text-fuchsia-600 sm:text-md md:text-xl lg:text-xl font-medium">Nov 16, 2024 - 08:00 PM</p>
+            <h2 className="text-2xl text-fuchsia-700 sm:text-3xl md:text-4xl lg:text-4xl font-semibold">Event Location</h2>
+            <p className="mt-4 mb-4 text-base text-fuchsia-600 sm:text-md md:text-xl lg:text-xl font-medium">Senakunja, Dhaka Cantonment, Dhaka</p>
+              <div className="map-container rounded-xl overflow-hidden border-4 border-fuchsia-700">
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.426334298274!2d90.39663464019388!3d23.80343418682632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c71beb3fd359%3A0xc8e9002577222d3f!2sSenakunja!5e0!3m2!1sen!2sbd!4v1724014394082!5m2!1sen!2sbd"
                     allowfullscreen="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
@@ -86,7 +87,7 @@ import anime from 'animejs';
                     ></iframe>
               </div>
             <div className="mt-8">
-              <h2 className="text-fuchsia-800 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">Videos</h2>
+              <h2 className="text-2xl text-fuchsia-700 sm:text-3xl md:text-4xl lg:text-4xl font-semibold">Videos</h2>
               <div className="mt-4 grid grid-cols-2 gap-4">
                 <div className="video-container aspect-video rounded-xl overflow-hidden">
                 <iframe
