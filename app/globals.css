@@ -112,13 +112,14 @@ body {
 
   .map-container iframe:hover {
     transform: scale(1.05);
+
   }
 
 
   /* Add this to your global CSS file or in a style tag */
 .inner-border {
   position: relative;
-  padding: 2rem; /* Adjust based on your needs */
+  padding: 0.5rem; /* Adjust based on your needs */
   background: rgb(252, 234, 255);
 }
 
@@ -129,7 +130,7 @@ body {
   left: 0.4rem;
   right: 0.4rem;
   bottom: 0.5rem;
-  border: 0.4rem solid rgb(155, 0, 129); /* Red border of 1rem thickness */
+  border: 0.3rem solid rgb(234 179 8); /* Red border of 1rem thickness */
   pointer-events: none; /* Ensure this does not interfere with clicking */
   box-sizing: border-box; /* Make sure the border doesn't affect the inner content */
   z-index: 0; /* Place it behind the inner content */
@@ -140,21 +141,18 @@ body {
   --shine-deg: 45deg;
   position: relative;
   overflow: hidden;
-  padding: 4rem 2rem;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding: 3rem 2rem;
   max-width: 28rem;
-
   background-repeat: no-repeat;
   background-position: -100% 0, 0 0;
-
   background-image: linear-gradient(
     var(--shine-deg),
     transparent 20%,
     transparent 40%,
-    rgba(255, 194, 226, 0.2) 50%,
+    rgba(216, 85, 234, 0.2) 50%,
     rgb(68, 68, 68, 0.2) 55%,
     transparent 70%,
-    transparent 100%
+    transparent 50%
   );
 
   background-size: 250% 250%, 100% 100%;
