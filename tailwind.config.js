@@ -7,6 +7,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       backgroundImage: {
@@ -16,6 +17,7 @@ module.exports = {
       fontFamily: {
         heading: ['var(--font-heading)', ...fontFamily.sans],
         body: ['var(--font-body)', ...fontFamily.sans],
+        cursive: ['Dancing Script', 'cursive'],
       },
       colors: {
         border: 'hsl(var(--border))',
