@@ -32,7 +32,7 @@ import anime from 'animejs';
     }, []);
 
   return (
-    <div className="min-h-screen min-w-screen bg-cover bg-center bg-gradient-to-b from-orange-400 to-yellow-200 z-0">
+    <div className="min-h-screen min-w-screen bg-cover bg-center bg-gradient-to-b from-fuchsia-600 to-fuchsia-500 z-0">
       <div className="absolute inset-0" />
       <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 py-12 sm:px-8 md:px-12 lg:px-16">
         <div className="w-full max-w-md rounded-3xl shadow-lg overflow-hidden">
@@ -81,7 +81,7 @@ import anime from 'animejs';
                 </div>
               </div>
             </div>
-            <h3 className="text-2xl text-blue-400 sm:text-3xl md:text-4xl lg:text-4xl font-bold mt-6 mb-6">Wedding Ceremony</h3>
+            <h3 className="text-2xl text-blue-400 sm:text-3xl md:text-4xl lg:text-4xl font-bold mt-6 mb-6">Wedding Reception</h3>
             <div className="p-0.5 rounded-xl relative bg-gradient-to-r from-blue-400 to-pink-400">
               <div className="bg-white rounded-lg p-4">
                 <p className="mt-4 mb-4 text-base text-pink-400 sm:text-lg md:text-xl lg:text-xl font-semibold">November 29, 2024</p>
@@ -102,7 +102,7 @@ import anime from 'animejs';
       </div>
       <footer className="bg-transparent py-4">
         <div className="container mx-auto text-center">
-          <p className="text-red-400 text-sm sm:text-xl">
+          <p className="text-purple-800 text-sm sm:text-xl">
             Tiasha & Shahbaz Wedding Invitation @ 2024
           </p>
         </div>
@@ -111,7 +111,7 @@ import anime from 'animejs';
       <div className="fixed bottom-4 right-4 z-30">
         <Button
             size="icon"
-            className="text-pink-400 hover:text-blue-500"
+            className="text-purple-800 hover:text-blue-500"
             onClick={() => window.location.href = "tel:+8801745582595"}
         >
             <PhoneIcon className="w-8 h-8" />
@@ -122,7 +122,7 @@ import anime from 'animejs';
       <div className="fixed bottom-4 left-4 z-30">
         <Button
           size="icon"
-          className="border-pink-400 border-4 rounded-lg hover:bg-primary-dark text-pink-400 hover:text-blue-500"
+          className="text-purple-800 hover:text-blue-500"
           onClick={() => {
             const title = encodeURIComponent("Tiasha and Shahbaz Wedding Reception");
             const location = encodeURIComponent("Dhaka Cantonment Sena Kunja");
