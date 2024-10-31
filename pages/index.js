@@ -53,8 +53,8 @@ import CalendarMonthSharpIcon from '@mui/icons-material/CalendarMonthSharp';
             </div>
           </div>
           <div className="p-6 sm:p-8 md:p-10 lg:p-12 bg-gradient-to-t to-pink-100 from-blue-100 text-center">
-            <h3 className="text-2xl text-black sm:text-3xl md:text-4xl lg:text-4xl font-bold mb-6">Holud Ceremony</h3>
-            <div className="p-0.5 rounded-xl relative bg-gradient-to-r from-yellow-400 to-red-400">
+            <h3 className="text-2xl text-black sm:text-3xl md:text-4xl lg:text-4xl font-semibold mb-6">Holud Ceremony</h3>
+            <div className="p-0.5 rounded-xl relative bg-gradient-to-r from-blue-400 to-pink-400">
               <div className="bg-white rounded-lg p-4">
                 <p className="mt-4 mb-4 text-base text-black sm:text-lg md:text-xl lg:text-xl font-semibold">November 22, 2024</p>
                 <p className="mt-4 mb-4 text-base text-black sm:text-lg md:text-xl lg:text-xl font-semibold">Time - 11:30 AM</p>
@@ -68,8 +68,8 @@ import CalendarMonthSharpIcon from '@mui/icons-material/CalendarMonthSharp';
                 </div>
               </div>
             </div>
-            <h3 className="text-2xl text-black sm:text-3xl md:text-4xl lg:text-4xl font-bold mt-6 mb-6">Wedding Ceremony</h3>
-            <div className="p-0.5 rounded-xl relative bg-gradient-to-r from-blue-400 to-pink-400">
+            <h3 className="text-2xl text-black sm:text-3xl md:text-4xl lg:text-4xl font-semibold mt-6 mb-6">Wedding Ceremony</h3>
+            <div className="p-0.5 rounded-xl relative bg-gradient-to-r from-pink-400 to-blue-400">
               <div className="bg-white rounded-lg p-4">
                 <p className="mt-4 mb-4 text-base text-black sm:text-lg md:text-xl lg:text-xl font-semibold">November 26, 2024</p>
                 <p className="mt-4 mb-4 text-base text-black sm:text-lg md:text-xl lg:text-xl font-semibold">Time - 07:00 PM</p>
@@ -83,7 +83,7 @@ import CalendarMonthSharpIcon from '@mui/icons-material/CalendarMonthSharp';
                 </div>
               </div>
             </div>
-            <h3 className="text-2xl text-black sm:text-3xl md:text-4xl lg:text-4xl font-bold mt-6 mb-6">Wedding Reception</h3>
+            <h3 className="text-2xl text-black sm:text-3xl md:text-4xl lg:text-4xl font-semibold mt-6 mb-6">Wedding Reception</h3>
             <div className="p-0.5 rounded-xl relative bg-gradient-to-r from-blue-400 to-pink-400">
               <div className="bg-white rounded-lg p-4">
                 <p className="mt-4 mb-4 text-base text-black sm:text-lg md:text-xl lg:text-xl font-semibold">November 29, 2024</p>
@@ -127,9 +127,9 @@ import CalendarMonthSharpIcon from '@mui/icons-material/CalendarMonthSharp';
           className="text-white hover:text-blue-500"
           onClick={() => {
             const title = encodeURIComponent("Tiasha and Shahbaz Wedding Reception");
-            const location = encodeURIComponent("Dhaka Cantonment Sena Kunja");
-            const startDate = "20241116T000000Z"; // UTC time format
-            const endDate = "20241116T235900Z"; // UTC time format
+            const location = encodeURIComponent("Pouro Community Center, Jashore");
+            const startDate = "20241129T000000Z"; // UTC time format
+            const endDate = "20241129T235900Z"; // UTC time format
 
             const calendarUrl = `https://www.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${startDate}/${endDate}&location=${location}&sf=true&output=xml`;
 
