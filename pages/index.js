@@ -32,7 +32,7 @@ import anime from 'animejs';
     }, []);
 
   return (
-    <div className="min-h-screen min-w-screen bg-cover bg-center bg-gradient-to-b from-fuchsia-600 to-fuchsia-500 z-0">
+    <div className="min-h-screen min-w-screen bg-cover bg-center bg-gradient-to-b from-fuchsia-700 to-fuchsia-400 z-0">
       <div className="absolute inset-0" />
       <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 py-12 sm:px-8 md:px-12 lg:px-16">
         <div className="w-full max-w-md rounded-3xl shadow-lg overflow-hidden">
