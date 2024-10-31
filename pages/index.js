@@ -74,7 +74,7 @@ import anime from 'animejs';
                 <p className="mt-4 mb-4 text-base text-purple-700 sm:text-lg md:text-xl lg:text-xl font-semibold">Shena Kunja, Dhaka Cantonment, Dhaka</p>
                 <div className="map-container rounded-xl overflow-hidden border-2 border-pink-400">
                   <iframe 
-                      src=""
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.4263343007624!2d90.3966292756055!3d23.80343418673778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c71beb3fd359%3A0xc8e9002577222d3f!2sSenakunja!5e0!3m2!1sen!2sbd!4v1730387935714!5m2!1sen!2sbd"
                       allowfullscreen="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                       className="w-full h-full"
                   ></iframe>
@@ -89,7 +89,7 @@ import anime from 'animejs';
                 <p className="mt-4 mb-4 text-base text-pink-400 sm:text-lg md:text-xl lg:text-xl font-semibold">Pouro Community Center, Jashore</p>
                 <div className="map-container rounded-xl overflow-hidden border-2 border-pink-400">
                   <iframe 
-                      src=""
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.1239552399243!2d89.20256447559028!3d23.165675610972254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff11991a869225%3A0xf02eefcd3b149be5!2sPouro%20Community%20Center%2C%20Jashore!5e0!3m2!1sen!2sbd!4v1730388044277!5m2!1sen!2sbd"
                       allowfullscreen="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                       className="w-full h-full"
                   ></iframe>
@@ -112,10 +112,10 @@ import anime from 'animejs';
         <Button
             size="icon"
             className="text-pink-400 hover:text-blue-500"
-            onClick={() => (window.location.href = "")}
+            onClick={() => window.location.href = "tel:+8801745582595"}
         >
             <PhoneIcon className="w-8 h-8" />
-            <span className="sr-only">RSVP</span>
+            <span className="sr-only">Call +88 01745582595</span>
         </Button>
       </div>
 
