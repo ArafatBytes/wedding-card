@@ -53,7 +53,7 @@ import CalendarMonthSharpIcon from '@mui/icons-material/CalendarMonthSharp';
             </div>
           </div>
           <div className="p-6 sm:p-8 md:p-10 lg:p-12 bg-gradient-to-t to-pink-100 from-blue-100 text-center">
-            <h3 className="text-2xl text-orange-500 sm:text-3xl md:text-4xl lg:text-4xl font-bold mb-6">Holud Ceremony</h3>
+            <h3 className="text-2xl text-black sm:text-3xl md:text-4xl lg:text-4xl font-bold mb-6">Holud Ceremony</h3>
             <div className="p-0.5 rounded-xl relative bg-gradient-to-r from-yellow-400 to-red-400">
               <div className="bg-white rounded-lg p-4">
                 <p className="mt-4 mb-4 text-base text-black sm:text-lg md:text-xl lg:text-xl font-semibold">November 22, 2024</p>
@@ -68,7 +68,7 @@ import CalendarMonthSharpIcon from '@mui/icons-material/CalendarMonthSharp';
                 </div>
               </div>
             </div>
-            <h3 className="text-2xl text-purple-800 sm:text-3xl md:text-4xl lg:text-4xl font-bold mt-6 mb-6">Wedding Ceremony</h3>
+            <h3 className="text-2xl text-black sm:text-3xl md:text-4xl lg:text-4xl font-bold mt-6 mb-6">Wedding Ceremony</h3>
             <div className="p-0.5 rounded-xl relative bg-gradient-to-r from-blue-400 to-pink-400">
               <div className="bg-white rounded-lg p-4">
                 <p className="mt-4 mb-4 text-base text-black sm:text-lg md:text-xl lg:text-xl font-semibold">November 26, 2024</p>
@@ -83,7 +83,7 @@ import CalendarMonthSharpIcon from '@mui/icons-material/CalendarMonthSharp';
                 </div>
               </div>
             </div>
-            <h3 className="text-2xl text-blue-400 sm:text-3xl md:text-4xl lg:text-4xl font-bold mt-6 mb-6">Wedding Reception</h3>
+            <h3 className="text-2xl text-black sm:text-3xl md:text-4xl lg:text-4xl font-bold mt-6 mb-6">Wedding Reception</h3>
             <div className="p-0.5 rounded-xl relative bg-gradient-to-r from-blue-400 to-pink-400">
               <div className="bg-white rounded-lg p-4">
                 <p className="mt-4 mb-4 text-base text-black sm:text-lg md:text-xl lg:text-xl font-semibold">November 29, 2024</p>
@@ -98,7 +98,7 @@ import CalendarMonthSharpIcon from '@mui/icons-material/CalendarMonthSharp';
                 </div>
               </div>
             </div>
-            <h4 className="text-purple-800 sm:text-xl md:text-2xl lg:text-3xl font-semibold mt-10">We are beyond excited to invite you to our wedding reception.</h4>
+            <h4 className="text-black sm:text-xl md:text-2xl lg:text-3xl font-base mt-10">We are beyond excited to invite you to our wedding reception.</h4>
           </div>
         </div>
       </div>

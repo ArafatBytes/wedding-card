@@ -16,7 +16,6 @@ module.exports = {
       },
       fontFamily: {
         greatVibes: ['Great Vibes', 'cursive'],
-        heading: ['Great Vibes', 'cursive'],
         body: ['Great Vibes', 'cursive'],
       },
       colors: {
