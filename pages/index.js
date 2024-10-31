@@ -46,63 +46,76 @@ import anime from 'animejs';
               className="absolute inset-0 w-full h-full object-cover"
             />
             <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 md:p-10 lg:p-12">
-              {/* <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-4xl font-semibold text-pink-400">Tiasha & Shahbaz</h1>
-              <p className="mt-2 text-lg sm:text-xl md:text-2xl lg:text-xl text-blue-300">November 16th, 2024</p> */}
-              <div className="mt-6 mb-2">
-              {/* <Button
-                className="flex items-center justify-center flex-1 bg-fuchsia-600 font-semibold py-2 px-4 rounded-2xl button-shine-effect hover:bg-fuchsia-400"
-                onClick={() => (window.location.href = "tel:+8801756839808")}
-                >
-              <PhoneIcon className="w-5 h-5" />
-              </Button>
-                <Button
-                  variant="secondary"
-                  className="flex items-center justify-center flex-1 bg-fuchsia-600 font-semibold py-2 px-4 rounded-2xl button-shine-effect hover:bg-fuchsia-400"
-                  onClick={() => (window.location.href = "mailto:example@email.com")}
-                >
-                  <MailOpenIcon className="w-5 h-5" />
-                </Button> */}
+              <div className="mt-0 mb-0">
               </div>
             </div>
           </div>
           <div className="p-6 sm:p-8 md:p-10 lg:p-12 bg-gradient-to-t to-pink-100 from-blue-100 text-center">
-            <h2 className="text-2xl text-blue-400 sm:text-3xl md:text-4xl lg:text-4xl font-semibold">Event Date & Time</h2>
-            <p className="mt-4 mb-4 text-base text-pink-400 sm:text-md md:text-xl lg:text-xl font-medium">Nov 22, 2024 - 11:30 AM</p>
-            <h2 className="text-2xl text-blue-400 sm:text-3xl md:text-4xl lg:text-4xl font-semibold">Event Location</h2>
-            <p className="mt-4 mb-4 text-base text-pink-400 sm:text-md md:text-xl lg:text-xl font-medium">Jol Josna, Mirpur Cantonment, Dhaka</p>
-              <div className="map-container rounded-xl overflow-hidden border-4 border-pink-400">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d939455.8596982587!2d90.43159556937425!3d23.106265883831945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c109bf9f2e85%3A0xec0ec96a9cc5607!2sJol%20Josna!5e0!3m2!1sen!2sbd!4v1729525742327!5m2!1sen!2sbd"
-                    allowfullscreen="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                    className="w-full h-full"
-                ></iframe>
+            <h3 className="text-2xl text-orange-500 sm:text-3xl md:text-4xl lg:text-4xl font-bold mb-6">Holud Ceremony</h3>
+            <div className="p-0.5 rounded-xl relative bg-gradient-to-r from-yellow-400 to-red-400">
+              <div className="bg-white rounded-lg p-4">
+                <p className="mt-4 mb-4 text-base text-orange-700 sm:text-lg md:text-xl lg:text-xl font-semibold">November 22, 2024</p>
+                <p className="mt-4 mb-4 text-base text-orange-700 sm:text-lg md:text-xl lg:text-xl font-semibold">Time - 11:30 AM</p>
+                <p className="mt-4 mb-4 text-base text-orange-700 sm:text-lg md:text-xl lg:text-xl font-semibold">Jol Josna, Mirpur Cantonment, Dhaka</p>
+                <div className="map-container rounded-xl overflow-hidden border-2 border-red-400">
+                  <iframe 
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d939455.8596982587!2d90.43159556937425!3d23.106265883831945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c109bf9f2e85%3A0xec0ec96a9cc5607!2sJol%20Josna!5e0!3m2!1sen!2sbd!4v1729525742327!5m2!1sen!2sbd"
+                      allowfullscreen="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                      className="w-full h-full"
+                  ></iframe>
+                </div>
               </div>
-            {/* <div className="bg-muted py-6 px-6 sm:py-8 sm:px-8 md:py-10 md:px-10 lg:py-12 lg:px-12 flex justify-center gap-5">
-              <Link href="#" className="text-muted-foreground text-white hover:text-primary" prefetch={false}>
-                <FacebookIcon className="w-8 h-8" />
-              </Link>
-              <Link href="#" className="text-muted-foreground text-white hover:text-primary" prefetch={false}>
-                <InstagramIcon className="w-8 h-8" />
-              </Link>
-            </div> */}
+            </div>
+            <h3 className="text-2xl text-purple-800 sm:text-3xl md:text-4xl lg:text-4xl font-bold mt-6 mb-6">Wedding Ceremony</h3>
+            <div className="p-0.5 rounded-xl relative bg-gradient-to-r from-blue-400 to-pink-400">
+              <div className="bg-white rounded-lg p-4">
+                <p className="mt-4 mb-4 text-base text-purple-700 sm:text-lg md:text-xl lg:text-xl font-semibold">November 26, 2024</p>
+                <p className="mt-4 mb-4 text-base text-purple-700 sm:text-lg md:text-xl lg:text-xl font-semibold">Time - 07:00 PM</p>
+                <p className="mt-4 mb-4 text-base text-purple-700 sm:text-lg md:text-xl lg:text-xl font-semibold">Shena Kunja, Dhaka Cantonment, Dhaka</p>
+                <div className="map-container rounded-xl overflow-hidden border-2 border-pink-400">
+                  <iframe 
+                      src=""
+                      allowfullscreen="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                      className="w-full h-full"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+            <h3 className="text-2xl text-blue-400 sm:text-3xl md:text-4xl lg:text-4xl font-bold mt-6 mb-6">Wedding Ceremony</h3>
+            <div className="p-0.5 rounded-xl relative bg-gradient-to-r from-blue-400 to-pink-400">
+              <div className="bg-white rounded-lg p-4">
+                <p className="mt-4 mb-4 text-base text-pink-400 sm:text-lg md:text-xl lg:text-xl font-semibold">November 29, 2024</p>
+                <p className="mt-4 mb-4 text-base text-pink-400 sm:text-lg md:text-xl lg:text-xl font-semibold">Time - 12:00 PM</p>
+                <p className="mt-4 mb-4 text-base text-pink-400 sm:text-lg md:text-xl lg:text-xl font-semibold">Pouro Community Center, Jashore</p>
+                <div className="map-container rounded-xl overflow-hidden border-2 border-pink-400">
+                  <iframe 
+                      src=""
+                      allowfullscreen="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                      className="w-full h-full"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+            <h4 className="text-purple-800 sm:text-xl md:text-2xl lg:text-3xl font-semibold mt-10">We are beyond excited to invite you to our wedding reception.</h4>
           </div>
         </div>
       </div>
       <footer className="bg-transparent py-4">
         <div className="container mx-auto text-center">
-          <p className="text-red-400 text-sm sm:text-base">
+          <p className="text-red-400 text-sm sm:text-xl">
             Tiasha & Shahbaz Wedding Invitation @ 2024
           </p>
         </div>
       </footer>
+
       <div className="fixed bottom-4 right-4 z-30">
         <Button
             size="icon"
-            className="border-pink-400 border-4 rounded-lg hover:bg-primary-dark text-pink-400 hover:text-blue-500"
-            onClick={() => (window.location.href = "https://tiasha-shahbaz-reception-card.vercel.app/",  "_blank")}
+            className="text-pink-400 hover:text-blue-500"
+            onClick={() => (window.location.href = "")}
         >
-            <QrCodeIcon className="w-8 h-8" />
-            <span className="sr-only">Scan QR Code</span>
+            <PhoneIcon className="w-8 h-8" />
+            <span className="sr-only">RSVP</span>
         </Button>
       </div>
 
@@ -196,19 +209,6 @@ function MapIcon(props) {
     </svg>
   );
 }
-
-// function AddToCalendarButton() {
-//   return (
-//     <Button
-//       size="icon"
-//       className="border-fuchsia-700 border-4 rounded-lg hover:bg-primary-dark text-fuchsia-700 hover:text-white absolute top-4 right-4 z-30"
-//       onClick={() => {/* Implement calendar addition logic here */}}
-//     >
-//       <CalendarIcon className="w-12 h-12" />
-//       <span className="sr-only">Add to Calendar</span>
-//     </Button>
-//   );
-// }
 
 function CalendarIcon(props) {
   return (
