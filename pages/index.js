@@ -208,14 +208,20 @@ export default function Home() {
                 className="text-center"
               >
                 <motion.div
+                  initial={{ opacity: 0, y: 20 }}
                   animate={{
-                    scale: [1, 1.2, 1],
+                    opacity: 1,
+                    y: 0,
+                  }}
+                  exit={{
+                    opacity: 0,
+                    y: -20,
                   }}
                   transition={{
                     duration: 0.5,
                     repeat: 2,
                   }}
-                  className="text-4xl md:text-6xl font-dancing text-purple-600"
+                  className="text-4xl md:text-6xl font-dancing bg-gradient-to-r from-amber-900 to-yellow-900 bg-clip-text text-transparent"
                 >
                   Welcome to Our
                   <br />
@@ -233,76 +239,75 @@ export default function Home() {
           <h1 className="text-3xl md:text-4xl font-serif mb-4 text-gray-800">
             The Wedding Reception of
           </h1>
-          <div className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-500 text-transparent bg-clip-text">
+          <div className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-amber-900 to-yellow-900 bg-clip-text text-transparent">
             Jagoron & Samiha
           </div>
           <p className="text-gray-700 italic mt-4 text-2xl">Join us in celebrating our love story</p>
         </div>
 
         {/* Animated Illustration Section */}
-        <div className="content-section relative w-full max-w-md mx-auto mb-24 animate-fade-in shadow-[0_0_20px_rgba(216,180,254,0.3),0_0_40px_rgba(192,132,252,0.15)] border border-purple-300/50 hover:shadow-[0_0_25px_rgba(216,180,254,0.4),0_0_50px_rgba(192,132,252,0.2)] transition-shadow duration-300">
+        <div className="content-section relative w-full max-w-md mx-auto mb-24 animate-fade-in shadow-[0_0_20px_rgba(216,180,254,0.3),0_0_40px_rgba(192,132,252,0.15)] border border-brown-300/50 hover:shadow-[0_0_25px_rgba(216,180,254,0.4),0_0_50px_rgba(192,132,252,0.2)] transition-shadow duration-300">
           <div className="relative min-h-[600px] overflow-hidden">
             {mounted && (
               <div className="relative w-full h-full overflow-hidden">
                 {/* Content Background */}
-                <div className="absolute inset-0 bg-gradient-to-b from-purple-500/10 to-pink-500/10 backdrop-blur-sm"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-brown-500/10 to-brown-500/10 backdrop-blur-sm"></div>
                 
                 {/* Text Overlay */}
                 <div className="relative flex items-center justify-center p-8 mt-8">
                   <div className="w-full max-w-3xl">
                     <div className="relative z-10">
                       <p className="text-center animate-fade-in space-y-8">
-                        <span className="block font-dancing text-4xl text-purple-800">
+                        <span className="block font-dancing text-4xl bg-gradient-to-r from-amber-900 to-yellow-900 bg-clip-text text-transparent">
                           With Joy and Gratitude
                         </span>
                         
                         <span className="block font-playfair text-gray-800 leading-relaxed text-2xl">
                           We,{" "}
-                          <span className="font-semibold text-purple-800/90 font-cormorant text-2xl">Sk. Masuduzzaman & Shahanaj Begum</span>,
+                          <span className="font-semibold font-cormorant text-2xl bg-gradient-to-r from-amber-900 to-yellow-900 bg-clip-text text-transparent">Sk. Masuduzzaman & Shahanaj Begum</span>,
                           <br />
                           request your blessings and kind company on this momentous day 
                           <br />of the wedding reception of our beloved son,
                         </span>
                         
-                        {/* Names section with background illustration */}
-                        <div className="relative">
+                        <div className="relative my-8">
                           {/* SVG Wedding Illustration */}
                           <svg className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full opacity-20" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                             {/* Bride */}
                             <g className="bride-animation">
                               <path d="M160,180 C160,150 180,120 180,90 C180,60 160,30 140,0" 
-                                    stroke="rgba(147, 51, 234, 0.8)" 
+                                    stroke="rgba(165, 42, 42, 0.8)" 
                                     strokeWidth="3" 
                                     fill="none" 
                                     className="animate-pulse" />
-                              <circle cx="160" cy="20" r="20" fill="rgba(147, 51, 234, 0.6)" />
+                              <circle cx="160" cy="20" r="20" fill="rgba(165, 42, 42, 0.6)" />
                               {/* Dress */}
                               <path d="M140,50 Q160,150 180,180 L140,180 Z" 
-                                    fill="rgba(147, 51, 234, 0.4)" />
+                                    fill="rgba(165, 42, 42, 0.4)" />
                             </g>
 
                             {/* Groom */}
                             <g className="groom-animation">
                               <path d="M240,180 C240,150 220,120 220,90 C220,60 240,30 260,0" 
-                                    stroke="rgba(147, 51, 234, 0.8)" 
+                                    stroke="rgba(165, 42, 42, 0.8)" 
                                     strokeWidth="3" 
                                     fill="none" 
                                     className="animate-pulse" />
-                              <circle cx="240" cy="20" r="20" fill="rgba(147, 51, 234, 0.6)" />
+                              <circle cx="240" cy="20" r="20" fill="rgba(165, 42, 42, 0.6)" />
                               {/* Suit */}
                               <path d="M220,50 Q240,150 260,180 L220,180 Z" 
-                                    fill="rgba(147, 51, 234, 0.4)" />
+                                    fill="rgba(165, 42, 42, 0.4)" />
                             </g>
 
                             {/* Hearts */}
                             <g className="hearts-animation">
                               <path d="M200,80 C215,65 235,65 250,80 C265,95 265,115 250,130 L200,180 L150,130 C135,115 135,95 150,80 C165,65 185,65 200,80" 
-                                    fill="rgba(147, 51, 234, 0.3)"
+                                    fill="rgba(165, 42, 42, 0.3)"
                                     className="animate-bounce" />
                             </g>
                           </svg>
 
-                          <span className="block text-5xl text-purple-800/90 my-6 relative z-10">
+                          <span className="block text-5xl bg-gradient-to-r from-amber-900 to-yellow-900 bg-clip-text text-transparent my-6 relative z-10">
                             Alvi Masud Jagoron
                           </span>
                           
@@ -310,13 +315,13 @@ export default function Home() {
                             with
                           </span>
                           
-                          <span className="block text-5xl text-purple-800/90 my-6 relative z-10">
+                          <span className="block text-5xl bg-gradient-to-r from-amber-900 to-yellow-900 bg-clip-text text-transparent my-6 relative z-10">
                             Nahian Samiha
                           </span>
                         </div>
                         
                         <div className="mt-8">
-                          <span className="block text-4xl text-purple-800 font-greatVibes">
+                          <span className="block text-4xl bg-gradient-to-r from-amber-900 to-yellow-900 bg-clip-text text-transparent font-greatVibes">
                             You all are cordially invited
                           </span>
                         </div>
@@ -338,9 +343,9 @@ export default function Home() {
         {/* Event Details Section */}
         <div className="content-section space-y-8 mb-12 animate-fade-in">
           {/* Reception Card */}
-          <div className="relative w-full max-w-md mx-auto overflow-hidden bg-gradient-to-b from-purple-500/10 to-pink-500/10 backdrop-blur-sm shadow-[0_0_20px_rgba(216,180,254,0.3),0_0_40px_rgba(192,132,252,0.15)] border border-purple-300/50 hover:shadow-[0_0_25px_rgba(216,180,254,0.4),0_0_50px_rgba(192,132,252,0.2)] transition-shadow duration-300">
+          <div className="relative w-full max-w-md mx-auto overflow-hidden bg-gradient-to-b from-brown-500/10 to-brown-500/10 backdrop-blur-sm shadow-[0_0_20px_rgba(216,180,254,0.3),0_0_40px_rgba(192,132,252,0.15)] border border-brown-300/50 hover:shadow-[0_0_25px_rgba(216,180,254,0.4),0_0_50px_rgba(192,132,252,0.2)] transition-shadow duration-300">
             <div className="relative z-10 p-8">
-              <h2 className="font-greatVibes font-extrabold text-3xl md:text-4xl mb-6 text-center bg-gradient-to-r from-purple-800 to-pink-700 bg-clip-text text-transparent">
+              <h2 className="font-greatVibes font-extrabold text-3xl md:text-4xl mb-6 text-center bg-gradient-to-r from-amber-950 to-yellow-950 bg-clip-text text-transparent">
                 Wedding Reception
               </h2>
               <div className="font-serif space-y-4 text-center">
@@ -352,14 +357,15 @@ export default function Home() {
                 <p className="text-xl font-normal">
                   Pouro Community Center, Jashore
                 </p>
-                <Link
-                  href="https://maps.app.goo.gl/JYjXsxQYUgWYNwFb8"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xl font-normal bg-gradient-to-r from-purple-800 to-pink-700 bg-clip-text text-transparent hover:from-purple-700 hover:to-pink-600 transition-colors duration-300 underline"
+                <button
+                  onClick={() => {
+                    const url = "https://maps.google.com/?q=Pouro+Community+Center+Jashore+Bangladesh";
+                    window.open(url, '_blank', 'noopener,noreferrer');
+                  }}
+                  className="inline-block text-xl font-normal text-amber-900 hover:text-amber-700 transition-colors duration-300 underline cursor-pointer"
                 >
                   View on Google Maps
-                </Link>
+                </button>
               </div>
             </div>
           </div>
