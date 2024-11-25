@@ -16,11 +16,11 @@ module.exports = {
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
+        dancing: ['Dancing Script', 'cursive'],
+        playfair: ['Playfair Display', 'serif'],
+        cormorant: ['Cormorant', 'serif'],
+        inter: ['Inter', 'sans-serif'],
         greatVibes: ['Great Vibes', 'cursive'],
-        body: ['Great Vibes', 'cursive'],
-        playfair: ['var(--font-playfair)'],
-        cormorant: ['var(--font-cormorant)'],
-        inter: ['var(--font-inter)'],
       },
       colors: {
         border: 'hsl(var(--border))',

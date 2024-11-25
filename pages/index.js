@@ -146,9 +146,9 @@ export default function Home() {
   // Calculate gradient colors based on scroll position
   const gradientStyle = {
     background: `linear-gradient(180deg, 
-      rgba(${Math.min(255, 200 + scrollPosition * 0.1)}, ${Math.max(0, 200 - scrollPosition * 0.1)}, 255, 1) 0%,
-      rgba(255, 240, 255, 1) 100%)`,
-    transition: 'background 0.8s cubic-bezier(0.4, 0, 0.2, 1)'
+      rgba(254, 205, 211, ${1 - scrollPosition * 0.001}) 0%,
+      rgba(230, 210, 250, ${1 - scrollPosition * 0.001}) 100%)`,
+    transition: 'background 0.3s ease-out'
   };
 
   const addToCalendar = () => {
@@ -211,11 +211,6 @@ export default function Home() {
         )}
       </AnimatePresence>
 
-      {/* Background Gradient Animation */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-purple-50 via-white to-pink-50 opacity-50"></div>
-      </div>
-
       <div className="relative z-20 container mx-auto px-4 py-12 max-w-4xl">
         {/* Header Section */}
         <div className="content-section text-center mb-24 animate-fade-in">
@@ -230,11 +225,11 @@ export default function Home() {
 
         {/* Animated Illustration Section */}
         <div className="content-section relative w-full max-w-md mx-auto mb-24 animate-fade-in">
-          <div className="relative min-h-[600px] rounded-3xl overflow-hidden">
+          <div className="relative min-h-[600px] rounded-[2rem] overflow-hidden">
             {mounted && (
-              <div className="relative w-full h-full">
+              <div className="relative w-full h-full rounded-[2rem] overflow-hidden">
                 {/* Content Background */}
-                <div className="absolute inset-0 bg-gradient-to-b from-purple-500/10 to-pink-500/10 backdrop-blur-sm"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-purple-500/10 to-pink-500/10 backdrop-blur-sm rounded-[2rem]"></div>
                 
                 {/* Text Overlay */}
                 <div className="relative flex items-center justify-center p-8 mt-8">
@@ -291,25 +286,25 @@ export default function Home() {
                             </g>
                           </svg>
 
-                          <span className="block font-cinzel text-5xl text-purple-800/90 my-6 relative z-10">
+                          <span className="block text-5xl text-purple-800/90 my-6 relative z-10">
                             Alvi Masud Jagoron
                           </span>
                           
-                          <span className="block font-playfair text-gray-800 text-3xl my-4 relative z-10">
+                          <span className="block text-gray-800 text-3xl my-4 relative z-10">
                             with
                           </span>
                           
-                          <span className="block font-cinzel text-5xl text-purple-800/90 my-6 relative z-10">
+                          <span className="block text-5xl text-purple-800/90 my-6 relative z-10">
                             Nahian Samiha
                           </span>
                         </div>
                         
-                        <span className="block font-playfair text-gray-800 leading-relaxed text-2xl">
+                        <span className="block text-gray-800 leading-relaxed text-2xl font-serif">
                           Daughter of{" "}
-                          <span className="font-semibold text-purple-800/90 font-cormorant text-2xl">Nazmul Arefin & Laila Arzuman Banu</span>
+                          <span className="font-semibold text-purple-800/90 font-serif text-2xl">Nazmul Arefin & Laila Arzuman Banu</span>
                         </span>
                         
-                        <span className="block mt-8 font-dancing text-4xl text-purple-800">
+                        <span className="block mt-8 text-4xl text-purple-800 font-sans">
                           You all are cordially invited
                         </span>
                       </p>
@@ -319,10 +314,7 @@ export default function Home() {
 
                 {/* Decorative Elements */}
                 <div className="absolute inset-0 pointer-events-none">
-                  <img src="/floral-corner.svg" className="absolute top-0 left-0 w-24 h-24 opacity-20" />
-                  <img src="/floral-corner.svg" className="absolute top-0 right-0 w-24 h-24 opacity-20 transform rotate-90" />
-                  <img src="/floral-corner.svg" className="absolute bottom-0 left-0 w-24 h-24 opacity-20 transform -rotate-90" />
-                  <img src="/floral-corner.svg" className="absolute bottom-0 right-0 w-24 h-24 opacity-20 transform rotate-180" />
+                  {/* Removed the corner images */}
                 </div>
               </div>
             )}
