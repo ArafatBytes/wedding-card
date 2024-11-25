@@ -299,14 +299,12 @@ export default function Home() {
                           </span>
                         </div>
                         
-                        <span className="block text-gray-800 leading-relaxed text-2xl font-serif">
-                          Daughter of{" "}
-                          <span className="font-semibold text-purple-800/90 font-serif text-2xl">Nazmul Arefin & Laila Arzuman Banu</span>
-                        </span>
+                        <div className="mt-8">
+                          <span className="block text-4xl text-purple-800 font-greatVibes">
+                            You all are cordially invited
+                          </span>
+                        </div>
                         
-                        <span className="block mt-8 text-4xl text-purple-800 font-sans">
-                          You all are cordially invited
-                        </span>
                       </p>
                     </div>
                   </div>
@@ -324,33 +322,28 @@ export default function Home() {
         {/* Event Details Section */}
         <div className="content-section space-y-8 mb-12 animate-fade-in">
           {/* Reception Card */}
-          <div className="content-section relative w-full max-w-md mx-auto animate-fade-in rounded-[2rem] overflow-hidden shadow-lg bg-gradient-to-b from-white/80 to-purple-50/80 backdrop-blur-sm p-8">
-            {/* Elegant gradient background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-purple-50/30 to-pink-50/40 backdrop-blur-md"></div>
-            
-            {/* Animated gradient border */}
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-400/20 via-pink-300/20 to-purple-400/20 opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
-            
-            {/* Subtle animated shine effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent shine-effect"></div>
-
+          <div className="relative w-full max-w-md mx-auto overflow-hidden rounded-[2rem] bg-gradient-to-b from-purple-500/10 to-pink-500/10 backdrop-blur-sm">
             {/* Content container */}
-            <div className="relative z-10">
-              <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-gray-800 text-center bg-gradient-to-r from-purple-800 to-pink-700 bg-clip-text text-transparent">
+            <div className="relative z-10 p-8">
+              <h2 className="text-2xl md:text-3xl font-playfair mb-6 text-gray-800 text-center bg-gradient-to-r from-purple-800 to-pink-700 bg-clip-text text-transparent">
                 Wedding Reception
               </h2>
-              <div className="space-y-6">
-                <div className="flex items-center justify-center space-x-3 hover:transform hover:scale-105 transition-transform duration-300">
+              <div className="space-y-4">
+                <div className="flex items-center justify-center space-x-3">
                   <CalendarMonthSharp className="text-purple-600" />
                   <span className="text-gray-700 font-medium">28th December, 2024 (Saturday)</span>
                 </div>
-                <div className="flex items-center justify-center space-x-3 hover:transform hover:scale-105 transition-transform duration-300">
+                <div className="flex items-center justify-center space-x-3">
                   <AccessTimeFilledRounded className="text-purple-600" />
                   <span className="text-gray-700 font-medium">1:00 PM</span>
                 </div>
-                <div className="flex items-center justify-center space-x-3 hover:transform hover:scale-105 transition-transform duration-300">
+                <div className="flex items-center justify-center space-x-3">
                   <LocationOnRounded className="text-purple-600" />
                   <span className="text-gray-700 font-medium">Pouro Community Center, Jashore</span>
+                </div>
+                <div className="flex items-center justify-center space-x-3">
+                  <CallRounded className="text-purple-600" />
+                  <span className="text-gray-700 font-medium">+880 1711-326981</span>
                 </div>
               </div>
 
@@ -374,54 +367,6 @@ export default function Home() {
         <div className="content-section text-center mt-12 animate-fade-in">
           <p className="text-gray-700 italic">We look forward to celebrating with you</p>
         </div>
-
-        {/* Fixed Buttons */}
-        <div className="fixed bottom-8 left-8 z-50">
-          <button
-            onClick={addToCalendar}
-            className="p-3 rounded-full bg-purple-100 hover:bg-purple-200 transition-colors duration-300 shadow-lg"
-            title="Add to Calendar"
-          >
-            <CalendarMonthSharp className="text-purple-600 text-2xl" />
-          </button>
-        </div>
-
-        <div className="fixed bottom-8 right-8 z-50">
-          <div className="relative">
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                setShowCallMenu(!showCallMenu);
-              }}
-              className="p-3 rounded-full bg-purple-100 hover:bg-purple-200 transition-colors duration-300 shadow-lg"
-              title="Call Us"
-            >
-              <CallRounded className="text-purple-600 text-2xl" />
-            </button>
-            {showCallMenu && (
-              <div 
-                className="absolute bottom-full right-0 mb-3 bg-white rounded-lg shadow-lg py-3 px-4 min-w-[200px]"
-                style={{
-                  transform: 'translateY(-8px)',
-                  maxWidth: 'min(calc(100vw - 32px), 300px)'
-                }}
-              >
-                <div className="text-sm text-gray-600 mb-2">Call us at:</div>
-                <a href="tel:+8801711326981" className="block text-purple-600 hover:text-purple-700 mb-2 whitespace-nowrap">+880 1711-326981</a>
-                <a href="tel:+8801771741628" className="block text-purple-600 hover:text-purple-700 whitespace-nowrap">+880 1771-741628</a>
-                <div className="absolute bottom-0 right-4 transform translate-y-1/2 rotate-45 w-4 h-4 bg-white"></div>
-              </div>
-            )}
-          </div>
-        </div>
-
-        {/* Click outside handler */}
-        {showCallMenu && (
-          <div
-            className="fixed inset-0 z-40"
-            onClick={() => setShowCallMenu(false)}
-          />
-        )}
       </div>
     </div>
   );
