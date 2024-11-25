@@ -3,7 +3,7 @@ import Link from "next/link"
 import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 import { CalendarMonthSharp, AccessTimeFilledRounded, LocationOnRounded, MapRounded, CallRounded } from '@mui/icons-material';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 
 // Dynamically import ReactConfetti to avoid SSR issues
 const ReactConfetti = dynamic(() => import('react-confetti'), {
@@ -14,8 +14,17 @@ export default function Home() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [showCallMenu, setShowCallMenu] = useState(false);
   const [mounted, setMounted] = useState(false);
-  const [showBlast, setShowBlast] = useState(true);
+  const [showBlast, setShowBlast] = useState(false);
   const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
+  const { scrollYProgress } = useScroll();
+  const backgroundColor = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [
+      'rgb(251, 207, 171)',
+      'rgb(219, 154, 109)'
+    ]
+  );
 
   // Handle window resize
   useEffect(() => {
@@ -122,8 +131,8 @@ export default function Home() {
     initializeAnimations();
 
     const timer = setTimeout(() => {
-      setShowBlast(false);
-    }, 3000); // Blast effect duration
+      setShowBlast(true);
+    }, 1000); // Blast effect duration
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -169,15 +178,12 @@ export default function Home() {
   return (
     <div className="min-h-screen overflow-hidden">
       {/* Background with gradient */}
-      <div 
+      <motion.div 
         className="fixed inset-0"
         style={{
-          background: `linear-gradient(180deg, 
-            rgb(251, 207, 171) 0%,
-            rgb(219, 154, 109) 100%
-          )`
+          backgroundColor
         }}
-      ></div>
+      ></motion.div>
       <AnimatePresence>
         {showBlast && mounted && (
           <>
