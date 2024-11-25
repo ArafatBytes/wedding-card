@@ -2,40 +2,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 :root {
   --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    --primary: 346.8 77.2% 49.8%;
-    --primary-foreground: 355.7 100% 99%;
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 45%;
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
-    --destructive: 0 72% 51%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 346.8 77.2% 49.8%;
-    --radius: 0.5rem;
+  --foreground: 240 10% 3.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 3.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 3.9%;
+  --primary: 346.8 77.2% 49.8%;
+  --primary-foreground: 355.7 100% 99%;
+  --secondary: 240 4.8% 95.9%;
+  --secondary-foreground: 240 5.9% 10%;
+  --muted: 240 4.8% 95.9%;
+  --muted-foreground: 240 3.8% 45%;
+  --accent: 240 4.8% 95.9%;
+  --accent-foreground: 240 5.9% 10%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 5.9% 90%;
+  --input: 240 5.9% 90%;
+  --ring: 346.8 77.2% 49.8%;
+  --radius: 0.5rem;
 }
 
 @layer base {
   * {
     @apply border-border;
   }
-
   body {
     @apply bg-background text-foreground font-greatVibes;
   }
-
   h1, h2, h3, h4, h5 {
     @apply font-sans;
   }
@@ -68,6 +67,7 @@ body {
       opacity: 1;
     }
   }
+
   @keyframes zoom-in {
     from {
       transform: scale(0.95);
@@ -76,9 +76,11 @@ body {
       transform: scale(1);
     }
   }
+
   .text-balance {
     text-wrap: balance;
   }
+
   .animate-fade-in {
     animation: fade-in 1s ease-in-out;
   }
@@ -87,7 +89,6 @@ body {
     animation: zoom-in 0.8s ease-in-out;
   }
 
-  /* Background image example */
   .bg-placeholder {
     background-image: url('/placeholder.svg');
     background-size: cover;
@@ -98,14 +99,15 @@ body {
     position: relative;
     overflow: hidden;
   }
+
   .video-container iframe {
     transition: transform 0.3s ease;
   }
+
   .video-container:hover iframe {
     transform: scale(1.05);
   }
 
-  /* Add the following to your CSS file or within a <style> tag */
   .map-container {
     position: relative;
     overflow: hidden;
@@ -113,84 +115,77 @@ body {
 
   .map-container iframe:hover {
     transform: scale(1.05);
-
   }
 
+  .inner-border {
+    position: relative;
+    padding: 0.5rem;
+    background: rgb(252, 233, 255);
+  }
 
-  /* Add this to your global CSS file or in a style tag */
-.inner-border {
-  position: relative;
-  padding: 0.5rem; /* Adjust based on your needs */
-  background: rgb(252, 233, 255);
-}
+  .inner-border::before {
+    content: '';
+    position: absolute;
+    top: 0.5rem;
+    left: 0.4rem;
+    right: 0.4rem;
+    bottom: 0.5rem;
+    border: 0.3rem solid rgb(254 240 138);
+    pointer-events: none;
+    box-sizing: border-box;
+    z-index: 0;
+    border-radius: 5%;
+  }
 
-.inner-border::before {
-  content: '';
-  position: absolute;
-  top: 0.5rem;
-  left: 0.4rem;
-  right: 0.4rem;
-  bottom: 0.5rem;
-  border: 0.3rem solid rgb(254 240 138); /* Red border of 1rem thickness */
-  pointer-events: none; /* Ensure this does not interfere with clicking */
-  box-sizing: border-box; /* Make sure the border doesn't affect the inner content */
-  z-index: 0; /* Place it behind the inner content */
-  border-radius: 5%;
-}
+  .card-shine-effect {
+    --shine-deg: 45deg;
+    position: relative;
+    overflow: hidden;
+    padding: 3rem 2rem;
+    max-width: 28rem;
+    background-repeat: no-repeat;
+    background-position: -100% 0, 0 0;
+    background-image: linear-gradient(
+      var(--shine-deg),
+      transparent 20%,
+      transparent 40%,
+      rgba(216, 85, 234, 0.2) 50%,
+      rgba(68, 68, 68, 0.2) 55%,
+      transparent 70%,
+      transparent 50%
+    );
+    background-size: 250% 250%, 100% 100%;
+    transition: background-position 0s ease;
+  }
 
-.card-shine-effect {
-  --shine-deg: 45deg;
-  position: relative;
-  overflow: hidden;
-  padding: 3rem 2rem;
-  max-width: 28rem;
-  background-repeat: no-repeat;
-  background-position: -100% 0, 0 0;
-  background-image: linear-gradient(
-    var(--shine-deg),
-    transparent 20%,
-    transparent 40%,
-    rgba(216, 85, 234, 0.2) 50%,
-    rgb(68, 68, 68, 0.2) 55%,
-    transparent 70%,
-    transparent 50%
-  );
+  .card-shine-effect:hover {
+    background-position: 200% 0, 0 0;
+    transition-duration: 1.5s;
+  }
 
-  background-size: 250% 250%, 100% 100%;
-  transition: background-position 0s ease;
-}
+  .button-shine-effect {
+    --shine-deg: 45deg;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    max-width: 28rem;
+    background-repeat: no-repeat;
+    background-position: -100% 0, 0 0;
+    background-image: linear-gradient(
+      var(--shine-deg),
+      transparent 20%,
+      transparent 40%,
+      rgba(237, 227, 180, 0.2) 50%,
+      rgba(221, 235, 145, 0.2) 55%,
+      transparent 70%,
+      transparent 100%
+    );
+    background-size: 250% 250%, 100% 100%;
+    transition: background-position 0s ease;
+  }
 
-.card-shine-effect:hover {
-  background-position: 200%0, 0 0;
-  transition-duration: 1.5s;
-}
-
-.button-shine-effect {
-  --shine-deg: 45deg;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  max-width: 28rem;
-  background-repeat: no-repeat;
-  background-position: -100% 0, 0 0;
-
-  background-image: linear-gradient(
-    var(--shine-deg),
-    transparent 20%,
-    transparent 40%,
-    rgba(237, 227, 180, 0.2) 50%,
-    rgba(221, 235, 145, 0.2) 55%,
-    transparent 70%,
-    transparent 100%
-  );
-
-  background-size: 250% 250%, 100% 100%;
-  transition: background-position 0s ease;
-}
-
-.button-shine-effect:hover {
-  background-position: 200%0, 0 0;
-  transition-duration: 2.0s;
-}
-
+  .button-shine-effect:hover {
+    background-position: 200% 0, 0 0;
+    transition-duration: 2.0s;
+  }
 }

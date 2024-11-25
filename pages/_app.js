@@ -1,7 +1,12 @@
 import Head from 'next/head';
-import '../app/globals.css'; // Adjust the path if necessary
+import '@/app/globals.css'; 
+import { useEffect } from 'react'
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    // Add any global scripts or initialization here
+  }, [])
+
   return (
     <>
       <Head>

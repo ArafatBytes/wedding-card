@@ -211,104 +211,9 @@ export default function Home() {
         )}
       </AnimatePresence>
 
-      {/* Enhanced Decorative Floral Elements */}
+      {/* Background Gradient Animation */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute top-0 left-0 w-full h-full bg-[url('/floral-pattern.png')] opacity-10"></div>
-        
-        {/* Top Left Corner Enhanced Floral */}
-        <svg className="absolute top-0 left-0 w-72 h-72 floral-design" viewBox="0 0 200 200">
-          {/* Main vine */}
-          <path d="M10,100 Q50,50 100,100 T190,100" fill="none" stroke="rgba(147,51,234,0.3)" strokeWidth="2" />
-          <path d="M100,10 Q50,50 100,100 T100,190" fill="none" stroke="rgba(219,39,119,0.3)" strokeWidth="2" />
-          {/* Decorative curves */}
-          <path d="M20,80 C40,10 110,10 130,80 S160,150 180,80" fill="none" stroke="rgba(147,51,234,0.2)" strokeWidth="2" />
-          {/* Small flowers group */}
-          <g className="flower-group">
-            <path d="M80,90 C85,85 95,85 100,90 S115,95 120,90 S135,85 140,90" fill="none" stroke="rgba(219,39,119,0.4)" strokeWidth="1.5" />
-            <circle cx="100" cy="90" r="3" fill="rgba(147,51,234,0.5)" />
-          </g>
-          {/* Additional decorative elements */}
-          <path d="M40,60 Q60,40 80,60 T120,60" fill="none" stroke="rgba(147,51,234,0.25)" strokeWidth="1.5" className="animate-pulse" />
-          <path d="M60,140 Q80,120 100,140 T140,140" fill="none" stroke="rgba(219,39,119,0.25)" strokeWidth="1.5" className="animate-pulse" />
-          {/* Flower petals */}
-          <g className="flower-petals">
-            <path d="M70,70 Q75,65 80,70 T90,70" fill="none" stroke="rgba(219,39,119,0.3)" strokeWidth="1" />
-            <path d="M70,72 Q75,77 80,72 T90,72" fill="none" stroke="rgba(219,39,119,0.3)" strokeWidth="1" />
-            <circle cx="80" cy="71" r="1" fill="rgba(147,51,234,0.5)" />
-          </g>
-          <g className="flower-petals" transform="translate(40,40)">
-            <path d="M70,70 Q75,65 80,70 T90,70" fill="none" stroke="rgba(219,39,119,0.3)" strokeWidth="1" />
-            <path d="M70,72 Q75,77 80,72 T90,72" fill="none" stroke="rgba(219,39,119,0.3)" strokeWidth="1" />
-            <circle cx="80" cy="71" r="1" fill="rgba(147,51,234,0.5)" />
-          </g>
-        </svg>
-
-        {/* Top Right Corner Enhanced Floral */}
-        <svg className="absolute top-0 right-0 w-72 h-72 floral-design" style={{ transform: 'scaleX(-1)' }} viewBox="0 0 200 200">
-          {/* Mirror of top left design */}
-          <path d="M10,100 Q50,50 100,100 T190,100" fill="none" stroke="rgba(147,51,234,0.3)" strokeWidth="2" />
-          <path d="M100,10 Q50,50 100,100 T100,190" fill="none" stroke="rgba(219,39,119,0.3)" strokeWidth="2" />
-          <path d="M20,80 C40,10 110,10 130,80 S160,150 180,80" fill="none" stroke="rgba(147,51,234,0.2)" strokeWidth="2" />
-          <g className="flower-group">
-            <path d="M80,90 C85,85 95,85 100,90 S115,95 120,90 S135,85 140,90" fill="none" stroke="rgba(219,39,119,0.4)" strokeWidth="1.5" />
-            <circle cx="100" cy="90" r="3" fill="rgba(147,51,234,0.5)" />
-          </g>
-          <path d="M40,60 Q60,40 80,60 T120,60" fill="none" stroke="rgba(147,51,234,0.25)" strokeWidth="1.5" className="animate-pulse" />
-          <path d="M60,140 Q80,120 100,140 T140,140" fill="none" stroke="rgba(219,39,119,0.25)" strokeWidth="1.5" className="animate-pulse" />
-          <g className="flower-petals">
-            <path d="M70,70 Q75,65 80,70 T90,70" fill="none" stroke="rgba(219,39,119,0.3)" strokeWidth="1" />
-            <path d="M70,72 Q75,77 80,72 T90,72" fill="none" stroke="rgba(219,39,119,0.3)" strokeWidth="1" />
-            <circle cx="80" cy="71" r="1" fill="rgba(147,51,234,0.5)" />
-          </g>
-        </svg>
-
-        {/* Decorative Dividers */}
-        <svg className="absolute left-1/2 transform -translate-x-1/2 w-full h-24 floral-design opacity-30" viewBox="0 0 400 50">
-          <path d="M0,25 Q100,0 200,25 T400,25" fill="none" stroke="rgba(147,51,234,0.4)" strokeWidth="1" />
-          <path d="M0,25 Q100,50 200,25 T400,25" fill="none" stroke="rgba(219,39,119,0.4)" strokeWidth="1" />
-          <g className="flower-accents">
-            <circle cx="200" cy="25" r="3" fill="rgba(147,51,234,0.5)" />
-            <circle cx="100" cy="25" r="2" fill="rgba(219,39,119,0.5)" />
-            <circle cx="300" cy="25" r="2" fill="rgba(219,39,119,0.5)" />
-          </g>
-        </svg>
-
-        {/* Bottom Decorative Frame */}
-        <svg className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full h-32 floral-design opacity-30" viewBox="0 0 400 100">
-          <path d="M0,50 Q100,0 200,50 T400,50" fill="none" stroke="rgba(147,51,234,0.3)" strokeWidth="1.5" />
-          <path d="M0,50 Q100,100 200,50 T400,50" fill="none" stroke="rgba(219,39,119,0.3)" strokeWidth="1.5" />
-          <g className="flower-accents">
-            <circle cx="200" cy="50" r="4" fill="rgba(147,51,234,0.4)" />
-            <circle cx="100" cy="50" r="3" fill="rgba(219,39,119,0.4)" />
-            <circle cx="300" cy="50" r="3" fill="rgba(219,39,119,0.4)" />
-          </g>
-        </svg>
-
-        {/* Side Decorative Elements */}
-        <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-24 h-96">
-          <svg className="w-full h-full floral-design opacity-30" viewBox="0 0 50 200">
-            <path d="M25,0 Q0,50 25,100 T25,200" fill="none" stroke="rgba(147,51,234,0.3)" strokeWidth="1.5" />
-            <path d="M25,0 Q50,50 25,100 T25,200" fill="none" stroke="rgba(219,39,119,0.3)" strokeWidth="1.5" />
-          </svg>
-        </div>
-        <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-24 h-96">
-          <svg className="w-full h-full floral-design opacity-30" viewBox="0 0 50 200">
-            <path d="M25,0 Q0,50 25,100 T25,200" fill="none" stroke="rgba(147,51,234,0.3)" strokeWidth="1.5" />
-            <path d="M25,0 Q50,50 25,100 T25,200" fill="none" stroke="rgba(219,39,119,0.3)" strokeWidth="1.5" />
-          </svg>
-        </div>
-
-        {/* Center Medallion */}
-        <svg className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 floral-design opacity-20" viewBox="0 0 200 200">
-          <g className="medallion">
-            <path d="M100,10 C140,10 140,90 100,90 S60,170 100,170" fill="none" stroke="rgba(147,51,234,0.3)" strokeWidth="2" />
-            <path d="M10,100 C10,140 90,140 90,100 S170,60 170,100" fill="none" stroke="rgba(219,39,119,0.3)" strokeWidth="2" />
-            <circle cx="100" cy="100" r="5" fill="rgba(147,51,234,0.5)" />
-            {/* Additional medallion details */}
-            <path d="M70,100 Q100,70 130,100 T70,100" fill="none" stroke="rgba(147,51,234,0.2)" strokeWidth="1.5" />
-            <path d="M100,70 Q130,100 100,130 T100,70" fill="none" stroke="rgba(219,39,119,0.2)" strokeWidth="1.5" />
-          </g>
-        </svg>
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-purple-50 via-white to-pink-50 opacity-50"></div>
       </div>
 
       <div className="relative z-20 container mx-auto px-4 py-12 max-w-4xl">
@@ -325,11 +230,11 @@ export default function Home() {
 
         {/* Animated Illustration Section */}
         <div className="content-section relative w-full max-w-md mx-auto mb-24 animate-fade-in">
-          <div className="relative min-h-[600px] bg-white/5 rounded-3xl">
+          <div className="relative min-h-[600px] rounded-3xl overflow-hidden">
             {mounted && (
               <div className="relative w-full h-full">
-                {/* SVG Animation Background */}
-                <div className="absolute inset-0 bg-gradient-to-b from-purple-500/10 to-pink-500/10 backdrop-blur-sm rounded-3xl"></div>
+                {/* Content Background */}
+                <div className="absolute inset-0 bg-gradient-to-b from-purple-500/10 to-pink-500/10 backdrop-blur-sm"></div>
                 
                 {/* Text Overlay */}
                 <div className="relative flex items-center justify-center p-8 mt-8">
@@ -427,7 +332,7 @@ export default function Home() {
         {/* Event Details Section */}
         <div className="content-section space-y-8 mb-12 animate-fade-in">
           {/* Reception Card */}
-          <div className="relative backdrop-blur-md rounded-3xl p-8 transform hover:scale-[1.02] transition-all duration-300 w-full max-w-md mx-auto overflow-hidden group">
+          <div className="content-section relative w-full max-w-md mx-auto animate-fade-in rounded-[2rem] overflow-hidden shadow-lg bg-gradient-to-b from-white/80 to-purple-50/80 backdrop-blur-sm p-8">
             {/* Elegant gradient background */}
             <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-purple-50/30 to-pink-50/40 backdrop-blur-md"></div>
             
@@ -459,17 +364,16 @@ export default function Home() {
 
               {/* Maps Link with elegant styling */}
               <div className="mt-6 text-center">
-                <a
+                <Link
                   href="https://www.google.com/maps/search/?api=1&query=Pouro+Community+Center+Jessore+Bangladesh"
                   target="_blank"
-                  rel="noopener noreferrer"
                   className="inline-flex items-center space-x-2 text-purple-700 hover:text-purple-800 transition-colors duration-300 group"
                 >
                   <span className="relative flex items-center space-x-2">
                     <MapRounded className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                     <span className="font-medium">View on Google Maps</span>
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -480,52 +384,52 @@ export default function Home() {
         </div>
 
         {/* Fixed Buttons */}
-        <div className="fixed bottom-8 left-8">
+        <div className="fixed bottom-8 left-8 z-50">
           <button
             onClick={addToCalendar}
-            className="flex items-center space-x-2 px-6 py-3 rounded-full 
-            bg-white/20 backdrop-blur-md border border-white/30 
-            text-purple-900 hover:bg-white/30 transition-all duration-300"
+            className="p-3 rounded-full bg-purple-100 hover:bg-purple-200 transition-colors duration-300 shadow-lg"
+            title="Add to Calendar"
           >
-            <CalendarMonthSharp />
-            <span>Add to Calendar</span>
+            <CalendarMonthSharp className="text-purple-600 text-2xl" />
           </button>
         </div>
 
-        <div className="fixed bottom-8 right-8 call-menu-container">
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              setShowCallMenu(!showCallMenu);
-            }}
-            className="flex items-center space-x-2 px-6 py-3 rounded-full 
-            bg-white/20 backdrop-blur-md border border-white/30 
-            text-purple-900 hover:bg-white/30 transition-all duration-300"
-          >
-            <CallRounded />
-            <span>Call Us</span>
-          </button>
-
-          {/* Popup Menu */}
-          {showCallMenu && (
-            <div className="absolute bottom-full right-0 mb-2 w-48 rounded-xl overflow-hidden bg-white/90 backdrop-blur-md shadow-xl border border-white/30">
-              <a
-                href="tel:+8801711326981"
-                className="flex items-center space-x-2 px-4 py-3 hover:bg-purple-50 transition-colors"
+        <div className="fixed bottom-8 right-8 z-50">
+          <div className="relative">
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                setShowCallMenu(!showCallMenu);
+              }}
+              className="p-3 rounded-full bg-purple-100 hover:bg-purple-200 transition-colors duration-300 shadow-lg"
+              title="Call Us"
+            >
+              <CallRounded className="text-purple-600 text-2xl" />
+            </button>
+            {showCallMenu && (
+              <div 
+                className="absolute bottom-full right-0 mb-3 bg-white rounded-lg shadow-lg py-3 px-4 min-w-[200px]"
+                style={{
+                  transform: 'translateY(-8px)',
+                  maxWidth: 'min(calc(100vw - 32px), 300px)'
+                }}
               >
-                <CallRounded className="text-purple-600" />
-                <span className="text-purple-900">+880 1711-326981</span>
-              </a>
-              <a
-                href="tel:+8801771741628"
-                className="flex items-center space-x-2 px-4 py-3 hover:bg-purple-50 transition-colors"
-              >
-                <CallRounded className="text-purple-600" />
-                <span className="text-purple-900">+880 1771-741628</span>
-              </a>
-            </div>
-          )}
+                <div className="text-sm text-gray-600 mb-2">Call us at:</div>
+                <a href="tel:+8801711326981" className="block text-purple-600 hover:text-purple-700 mb-2 whitespace-nowrap">+880 1711-326981</a>
+                <a href="tel:+8801771741628" className="block text-purple-600 hover:text-purple-700 whitespace-nowrap">+880 1771-741628</a>
+                <div className="absolute bottom-0 right-4 transform translate-y-1/2 rotate-45 w-4 h-4 bg-white"></div>
+              </div>
+            )}
+          </div>
         </div>
+
+        {/* Click outside handler */}
+        {showCallMenu && (
+          <div
+            className="fixed inset-0 z-40"
+            onClick={() => setShowCallMenu(false)}
+          />
+        )}
       </div>
     </div>
   );
