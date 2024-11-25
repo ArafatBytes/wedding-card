@@ -167,7 +167,17 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen overflow-hidden" style={gradientStyle}>
+    <div className="min-h-screen overflow-hidden">
+      {/* Background with gradient */}
+      <div 
+        className="fixed inset-0"
+        style={{
+          background: `linear-gradient(180deg, 
+            rgba(252, 231, 243, 1) 0%,
+            rgba(147, 51, 234, 0.95) 100%
+          )`
+        }}
+      ></div>
       <AnimatePresence>
         {showBlast && mounted && (
           <>
@@ -224,7 +234,7 @@ export default function Home() {
         </div>
 
         {/* Animated Illustration Section */}
-        <div className="content-section relative w-full max-w-md mx-auto mb-24 animate-fade-in shadow-[0_0_15px_rgba(168,85,247,0.15)] border border-purple-200/50">
+        <div className="content-section relative w-full max-w-md mx-auto mb-24 animate-fade-in shadow-[0_0_20px_rgba(216,180,254,0.3),0_0_40px_rgba(192,132,252,0.15)] border border-purple-300/50 hover:shadow-[0_0_25px_rgba(216,180,254,0.4),0_0_50px_rgba(192,132,252,0.2)] transition-shadow duration-300">
           <div className="relative min-h-[600px] overflow-hidden">
             {mounted && (
               <div className="relative w-full h-full overflow-hidden">
@@ -322,34 +332,25 @@ export default function Home() {
         {/* Event Details Section */}
         <div className="content-section space-y-8 mb-12 animate-fade-in">
           {/* Reception Card */}
-          <div className="relative w-full max-w-md mx-auto overflow-hidden bg-gradient-to-b from-purple-500/10 to-pink-500/10 backdrop-blur-sm shadow-[0_0_15px_rgba(168,85,247,0.15)] border border-purple-200/50">
-            {/* Content container */}
+          <div className="relative w-full max-w-md mx-auto overflow-hidden bg-gradient-to-b from-purple-500/10 to-pink-500/10 backdrop-blur-sm shadow-[0_0_20px_rgba(216,180,254,0.3),0_0_40px_rgba(192,132,252,0.15)] border border-purple-300/50 hover:shadow-[0_0_25px_rgba(216,180,254,0.4),0_0_50px_rgba(192,132,252,0.2)] transition-shadow duration-300">
             <div className="relative z-10 p-8">
-              <h2 className="text-2xl md:text-3xl font-playfair mb-6 text-gray-800 text-center bg-gradient-to-r from-purple-800 to-pink-700 bg-clip-text text-transparent">
+              <h2 className="font-greatVibes font-extrabold text-3xl md:text-4xl mb-6 text-center bg-gradient-to-r from-purple-800 to-pink-700 bg-clip-text text-transparent">
                 Wedding Reception
               </h2>
-              <div className="space-y-4">
-                <div className="flex items-center justify-center space-x-3">
-                  <span className="text-gray-700 font-black text-2xl">28th December, 2024 (Saturday)</span>
-                </div>
-                <div className="flex items-center justify-center space-x-3">
-                  <span className="text-gray-700 font-black text-2xl">1:00 PM</span>
-                </div>
-                <div className="flex items-center justify-center space-x-3">
-                  <span className="text-gray-700 font-black text-2xl">Pouro Community Center, Jashore</span>
-                </div>
-                <div className="flex items-center justify-center space-x-3">
-                  <span className="text-gray-700 font-black text-2xl">+880 1711-326981</span>
-                </div>
-              </div>
-
-              {/* Maps Link with elegant styling */}
-              <div className="mt-6 text-center">
+              <div className="font-serif space-y-4 text-center">
+                <p className="text-xl font-normal">28th December, 2024 (Saturday)</p>
+                <p className="text-xl font-normal">1:00 PM</p>
+                <p className="text-xl font-normal">
+                  +880 1711-326981
+                </p>
+                <p className="text-xl font-normal">
+                  Pouro Community Center, Jashore
+                </p>
                 <Link
                   href="https://maps.app.goo.gl/JYjXsxQYUgWYNwFb8"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-purple-600 hover:text-purple-700 transition-colors duration-300 font-black text-2xl"
+                  className="text-xl font-normal bg-gradient-to-r from-purple-800 to-pink-700 bg-clip-text text-transparent hover:from-purple-700 hover:to-pink-600 transition-colors duration-300 underline"
                 >
                   View on Google Maps
                 </Link>

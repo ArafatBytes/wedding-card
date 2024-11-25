@@ -34,6 +34,14 @@
   }
   body {
     @apply bg-background text-foreground font-greatVibes;
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+      to bottom,
+      rgb(var(--background-start-rgb)),
+      rgba(253, 242, 248, 0.3),
+      rgba(250, 245, 255, 0.4)
+    );
+    min-height: 100vh;
   }
   h1, h2, h3, h4, h5 {
     @apply font-sans;
@@ -52,16 +60,6 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 245, 243, 255;
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-    to bottom,
-    rgb(var(--background-start-rgb)),
-    rgba(253, 242, 248, 0.15),
-    rgba(245, 243, 255, 0.15)
-  );
 }
 
 @layer utilities {
