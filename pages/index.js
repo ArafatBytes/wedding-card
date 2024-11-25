@@ -220,7 +220,7 @@ export default function Home() {
           <div className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-500 text-transparent bg-clip-text">
             Jagoron & Samiha
           </div>
-          <p className="text-gray-700 italic mt-4">Join us in celebrating our love story</p>
+          <p className="text-gray-700 italic mt-4 text-2xl">Join us in celebrating our love story</p>
         </div>
 
         {/* Animated Illustration Section */}
@@ -330,34 +330,28 @@ export default function Home() {
               </h2>
               <div className="space-y-4">
                 <div className="flex items-center justify-center space-x-3">
-                  <CalendarMonthSharp className="text-purple-600" />
-                  <span className="text-gray-700 font-medium">28th December, 2024 (Saturday)</span>
+                  <span className="text-gray-700 font-black text-2xl">28th December, 2024 (Saturday)</span>
                 </div>
                 <div className="flex items-center justify-center space-x-3">
-                  <AccessTimeFilledRounded className="text-purple-600" />
-                  <span className="text-gray-700 font-medium">1:00 PM</span>
+                  <span className="text-gray-700 font-black text-2xl">1:00 PM</span>
                 </div>
                 <div className="flex items-center justify-center space-x-3">
-                  <LocationOnRounded className="text-purple-600" />
-                  <span className="text-gray-700 font-medium">Pouro Community Center, Jashore</span>
+                  <span className="text-gray-700 font-black text-2xl">Pouro Community Center, Jashore</span>
                 </div>
                 <div className="flex items-center justify-center space-x-3">
-                  <CallRounded className="text-purple-600" />
-                  <span className="text-gray-700 font-medium">+880 1711-326981</span>
+                  <span className="text-gray-700 font-black text-2xl">+880 1711-326981</span>
                 </div>
               </div>
 
               {/* Maps Link with elegant styling */}
               <div className="mt-6 text-center">
                 <Link
-                  href="https://www.google.com/maps/search/?api=1&query=Pouro+Community+Center+Jessore+Bangladesh"
+                  href="https://maps.app.goo.gl/JYjXsxQYUgWYNwFb8"
                   target="_blank"
-                  className="inline-flex items-center space-x-2 text-purple-700 hover:text-purple-800 transition-colors duration-300 group"
+                  rel="noopener noreferrer"
+                  className="text-purple-600 hover:text-purple-700 transition-colors duration-300 font-black text-2xl"
                 >
-                  <span className="relative flex items-center space-x-2">
-                    <MapRounded className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-                    <span className="font-medium">View on Google Maps</span>
-                  </span>
+                  View on Google Maps
                 </Link>
               </div>
             </div>
@@ -365,7 +359,7 @@ export default function Home() {
         </div>
 
         <div className="content-section text-center mt-12 animate-fade-in">
-          <p className="text-gray-700 italic">We look forward to celebrating with you</p>
+          <p className="text-gray-700 italic text-2xl">We look forward to celebrating with you</p>
         </div>
       </div>
     </div>
