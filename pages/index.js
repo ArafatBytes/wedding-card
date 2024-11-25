@@ -224,12 +224,12 @@ export default function Home() {
         </div>
 
         {/* Animated Illustration Section */}
-        <div className="content-section relative w-full max-w-md mx-auto mb-24 animate-fade-in">
-          <div className="relative min-h-[600px] rounded-[2rem] overflow-hidden">
+        <div className="content-section relative w-full max-w-md mx-auto mb-24 animate-fade-in shadow-[0_0_15px_rgba(168,85,247,0.15)] border border-purple-200/50">
+          <div className="relative min-h-[600px] overflow-hidden">
             {mounted && (
-              <div className="relative w-full h-full rounded-[2rem] overflow-hidden">
+              <div className="relative w-full h-full overflow-hidden">
                 {/* Content Background */}
-                <div className="absolute inset-0 bg-gradient-to-b from-purple-500/10 to-pink-500/10 backdrop-blur-sm rounded-[2rem]"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-purple-500/10 to-pink-500/10 backdrop-blur-sm"></div>
                 
                 {/* Text Overlay */}
                 <div className="relative flex items-center justify-center p-8 mt-8">
@@ -322,7 +322,7 @@ export default function Home() {
         {/* Event Details Section */}
         <div className="content-section space-y-8 mb-12 animate-fade-in">
           {/* Reception Card */}
-          <div className="relative w-full max-w-md mx-auto overflow-hidden rounded-[2rem] bg-gradient-to-b from-purple-500/10 to-pink-500/10 backdrop-blur-sm">
+          <div className="relative w-full max-w-md mx-auto overflow-hidden bg-gradient-to-b from-purple-500/10 to-pink-500/10 backdrop-blur-sm shadow-[0_0_15px_rgba(168,85,247,0.15)] border border-purple-200/50">
             {/* Content container */}
             <div className="relative z-10 p-8">
               <h2 className="text-2xl md:text-3xl font-playfair mb-6 text-gray-800 text-center bg-gradient-to-r from-purple-800 to-pink-700 bg-clip-text text-transparent">
