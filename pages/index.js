@@ -246,7 +246,7 @@ export default function Home() {
         </div>
 
         {/* Animated Illustration Section */}
-        <div className="content-section relative w-full max-w-md mx-auto mb-24 animate-fade-in shadow-[0_0_20px_rgba(216,180,254,0.3),0_0_40px_rgba(192,132,252,0.15)] border border-brown-300/50 hover:shadow-[0_0_25px_rgba(216,180,254,0.4),0_0_50px_rgba(192,132,252,0.2)] transition-shadow duration-300">
+        <div className="content-section relative w-full max-w-md mx-auto mb-24 animate-fade-in shadow-[0_0_20px_rgba(216,180,254,0.3),0_0_40px_rgba(192,132,252,0.15)] border border-brown-300/50 hover:shadow-[0_0_25px_rgba(216,180,254,0.4),0_0_50px_rgba(192,132,252,0.2)] transition-shadow duration-300 rounded-xl">
           <div className="relative min-h-[600px] overflow-hidden">
             {mounted && (
               <div className="relative w-full h-full overflow-hidden">
@@ -258,7 +258,7 @@ export default function Home() {
                   <div className="w-full max-w-3xl">
                     <div className="relative z-10">
                       <p className="text-center animate-fade-in space-y-8">
-                        <span className="block font-dancing text-4xl bg-gradient-to-r from-amber-900 to-yellow-900 bg-clip-text text-transparent">
+                        <span className="block font-dancing text-4xl font-semibold bg-gradient-to-r from-amber-900 to-yellow-900 bg-clip-text text-transparent">
                           With Joy and Gratitude
                         </span>
                         
@@ -343,7 +343,7 @@ export default function Home() {
         {/* Event Details Section */}
         <div className="content-section space-y-8 mb-12 animate-fade-in">
           {/* Reception Card */}
-          <div className="relative w-full max-w-md mx-auto overflow-hidden bg-gradient-to-b from-brown-500/10 to-brown-500/10 backdrop-blur-sm shadow-[0_0_20px_rgba(216,180,254,0.3),0_0_40px_rgba(192,132,252,0.15)] border border-brown-300/50 hover:shadow-[0_0_25px_rgba(216,180,254,0.4),0_0_50px_rgba(192,132,252,0.2)] transition-shadow duration-300">
+          <div className="relative w-full max-w-md mx-auto overflow-hidden bg-gradient-to-b from-brown-500/10 to-brown-500/10 backdrop-blur-sm shadow-[0_0_20px_rgba(216,180,254,0.3),0_0_40px_rgba(192,132,252,0.15)] border border-brown-300/50 hover:shadow-[0_0_25px_rgba(216,180,254,0.4),0_0_50px_rgba(192,132,252,0.2)] transition-shadow duration-300 rounded-xl">
             <div className="relative z-10 p-8">
               <h2 className="font-greatVibes font-extrabold text-3xl md:text-4xl mb-6 text-center bg-gradient-to-r from-amber-950 to-yellow-950 bg-clip-text text-transparent">
                 Wedding Reception
@@ -357,15 +357,6 @@ export default function Home() {
                 <p className="text-xl font-normal">
                   Pouro Community Center, Jashore
                 </p>
-                <button
-                  onClick={() => {
-                    const url = "https://maps.google.com/?q=Pouro+Community+Center+Jashore+Bangladesh";
-                    window.open(url, '_blank', 'noopener,noreferrer');
-                  }}
-                  className="inline-block text-xl font-normal text-amber-900 hover:text-amber-700 transition-colors duration-300 underline cursor-pointer"
-                >
-                  View on Google Maps
-                </button>
               </div>
             </div>
           </div>
