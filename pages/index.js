@@ -173,8 +173,8 @@ export default function Home() {
         className="fixed inset-0"
         style={{
           background: `linear-gradient(180deg, 
-            rgba(252, 231, 243, 1) 0%,
-            rgba(147, 51, 234, 0.95) 100%
+            rgb(251, 207, 171) 0%,
+            rgb(219, 154, 109) 100%
           )`
         }}
       ></div>
